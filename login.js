@@ -4,7 +4,7 @@ function Submit(){
     var error=document.querySelector("p");
     var c=0;
     if(Username.value=="" && Password==""){
-        alert("fhj")
+        alert("fhj");
         c++;
         console.log(c);
         }else if(c>2){
