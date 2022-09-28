@@ -4,9 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/home.css">
     <title>home Page</title>
+    <style>
+       
+    </style>
 </head>
 <body>
-    
+    <h1>Bill Software</h1>
+    <div class="Shop">
+        <strong>Sri muthumari amman Water Wash</strong>
+        <address>no:157 G.n.t road moolakadai</address>
+        <em>Mobile no : 9382875101</em>
+        <em>Email : ramr65007@gmail.com</em>
+    </div>
+    <hr>
+    <div class="invoice">
+        <span id="date">liikjadxkj</span> 
+        <span id="time" style="float: right;"></span>
+    </div>
+    <div class="middle">
+    <div class="bill-input">
+            <label for="servies">Description : 
+            <select name="servies"onchange="servies()" id="servies">
+            <option value=""></option>
+            <option value="bike">Bike</option>
+            <option value="car">Car</option>
+            <option value="auto">Auto</option>
+            <option value="tempo">Tempo</option>
+            <option value="small battery">Small battery</option>
+            <option value="big battery">Big Battery</option>
+            <option value="small Engine">Small Engine</option>
+            <option value="big engine">Big Engine</option>
+            </select>
+        </label>
+        <label for="qty">Qty : 
+            <select name="qty"onchange="qty()" id="qty">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+            </select>
+        </label>
+        <label for="price">Rate :
+        <input id="price"   type="text"></label>
+        <label for="amount">Amount :
+        <input id="amount"  type="text">
+    </label>
+    </div>
+</div>
+    <div class="middle">
+    <button onclick="submit()">Add Cart</button>
+    </div>
+    <div class="middle">
+    <div class="bill-container">
+        <table>
+        <tr>
+            <th>Sno</th>
+            <th>Description</th>
+            <th>Qty</th>
+            <th>Rate</th>
+            <th>Amount</th>
+        </tr>
+        <tr >
+            <td id="size"id="size"class="Sno"></td>
+            <td id="size"class="servies"></td>
+            <td id="size"class="qty"></td>
+            <td id="size"class="price"></td>
+            <td id="size"class="amount"></td>
+        </tr>
+        <tr>
+            <td  id="total"  colspan="4">Total Amount : </td>
+            <td  class="totalNumber"></td>
+        </tr>
+        <tr>
+            <td  id="total" colspan="4">Tender Amount : </td>
+            <div class="c">
+            <td  class="tenderNumber"><input type="text" id="tenderValue" onchange="tender()"> </td>
+        </div>
+        </tr>
+        <tr>
+            <td  id="total" colspan="4">Balance Amount : </td>
+            <td  class="balanceNumber"></td>
+        </tr>
+        </table>
+        <p id="welcome">Thank you for coming,visit again...</p>
+    </div>
+</div>
+<div class="middle1">
+<button onclick="pdf()">print</button><br>
+    <button >Veiw</button>
+    </div>
 </body>
+<script src="js/home.js"></script>
 </html>

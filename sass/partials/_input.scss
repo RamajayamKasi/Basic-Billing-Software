@@ -1,0 +1,39 @@
+input,select{
+    height: 30px;
+    outline: none;
+  /* border: none;*/
+    font-size: 18px;
+    padding-left: 10px;
+    width: 15%;
+    margin-right: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label{
+    font-size: 19px;
+    font-weight: bolder;
+}
+.bill-input{
+    margin-top: 40px;  
+    margin-left: 20px;
+}
+button{
+    padding: 6px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color:lightblue;
+    margin-top: 20px;
+    width: 15%;
+    cursor: pointer;
+}
+button:hover{
+    background-color: lightseagreen;
+    color: white;
+}
+button:active{
+    background-color: teal;
+    color: black;
+}

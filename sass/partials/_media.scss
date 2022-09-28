@@ -1,0 +1,38 @@
+@media (max-width:1100px) {
+    .middle{
+        display: flex;
+        justify-content: center;
+    }
+    .bill-container{
+        position: relative;
+        top: 0%;
+        float: none;
+        margin-right:0px;
+    }
+    table,tr,th,td,#tenderValue{
+        font-size: 10px;
+    }
+    input,select{
+        width: 90%;
+    }
+    button{width: 60%;margin-bottom: 20px;}
+    .Shop{
+        text-align: center;
+        margin-left:0px;
+    }
+    button{margin-left: 0px;}
+    .middle1{
+        text-align: center;
+        margin-top: -60px;
+    }
+}
+@media (min-width:460px) and (max-width:800px) {
+    table,tr,th,td,#tenderValue{
+        font-size: 20px;
+    }  
+}
+@media (min-width:390px) and (max-width:469px) {
+    table,tr,th,td,#tenderValue{
+        font-size: 15px;
+    }  
+}

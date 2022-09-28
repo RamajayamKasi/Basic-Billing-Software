@@ -1,0 +1,46 @@
+.bill-container{
+    display: block;
+    margin-right: 20px;
+    float: right;
+    position: relative;
+    top:-330px;
+   }
+   table,th,tr,td{
+       padding: 15px;
+       border: 2.5px solid black;
+       border-collapse: collapse;
+       text-align: center;
+       text-transform: capitalize;
+   }
+   th{
+       font-size: 40px;
+       background-color: lightsteelblue;
+       color: white;
+   }
+   td{
+       padding: 0%;
+       font-size: 30px;
+       padding-top: 10px;
+       padding-bottom: 4px;
+   }
+   #total{
+       height: 10px;
+       text-align: right;
+       padding-right: 20px;
+   }
+   
+   #tenderValue{
+       width: 70%;
+       margin-top:0px;
+       margin-bottom: 1%;
+       float: right;
+       margin-right: 16%;
+       font-size: 19px;
+       cursor: pointer;
+   }
+   .c{
+       display: flex;
+       justify-content: center;
+       margin-left: 30px;
+   }
+  

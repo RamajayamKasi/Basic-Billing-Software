@@ -1,0 +1,238 @@
+input, select {
+  height: 30px;
+  outline: none;
+  /* border: none;*/
+  font-size: 18px;
+  padding-left: 10px;
+  width: 15%;
+  margin-right: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.bill-input {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+button {
+  padding: 6px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: lightblue;
+  margin-top: 20px;
+  width: 15%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightseagreen;
+  color: white;
+}
+
+button:active {
+  background-color: teal;
+  color: black;
+}
+
+.bill-container {
+  display: block;
+  margin-right: 20px;
+  float: right;
+  position: relative;
+  top: -330px;
+}
+
+table, th, tr, td {
+  padding: 15px;
+  border: 2.5px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+th {
+  font-size: 40px;
+  background-color: lightsteelblue;
+  color: white;
+}
+
+td {
+  padding: 0%;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+#total {
+  height: 10px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+#tenderValue {
+  width: 70%;
+  margin-top: 0px;
+  margin-bottom: 1%;
+  float: right;
+  margin-right: 16%;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.c {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  background-color: blueviolet;
+}
+
+.Shop {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+em, address {
+  margin-top: 10px;
+  display: block;
+}
+
+.invoice {
+  margin-top: 20px;
+}
+
+span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/****************************************** Bill Input **********************************************/
+hr {
+  margin-top: 15px;
+  height: 5px;
+  background-color: black;
+}
+
+button {
+  margin-left: 20px;
+}
+
+@media print {
+  .bill-input, button, h1 {
+    display: none;
+  }
+  html {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0;
+    border: 2px solid black;
+  }
+  .bill-container {
+    margin-top: 20px;
+    margin-left: 0px;
+    float: none;
+  }
+  .Shop {
+    text-align: center;
+    font-size: 32px;
+  }
+  strong {
+    font-size: 40px;
+  }
+  .invoice {
+    font-size: 26px;
+  }
+  input {
+    border: none;
+    outline: none;
+  }
+  #tenderValue {
+    text-align: center;
+  }
+  #welcome {
+    font-size: 40rem;
+    visibility: visible;
+  }
+  table, tr, td, th {
+    font-size: 26rem;
+  }
+}
+#welcome {
+  text-align: center;
+  font-size: 29px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  visibility: hidden;
+}
+
+@media (max-width: 1100px) {
+  .middle {
+    display: flex;
+    justify-content: center;
+  }
+  .bill-container {
+    position: relative;
+    top: 0%;
+    float: none;
+    margin-right: 0px;
+  }
+  table, tr, th, td, #tenderValue {
+    font-size: 10px;
+  }
+  input, select {
+    width: 90%;
+  }
+  button {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .Shop {
+    text-align: center;
+    margin-left: 0px;
+  }
+  button {
+    margin-left: 0px;
+  }
+  .middle1 {
+    text-align: center;
+    margin-top: -60px;
+  }
+}
+@media (min-width: 460px) and (max-width: 800px) {
+  table, tr, th, td, #tenderValue {
+    font-size: 20px;
+  }
+}
+@media (min-width: 390px) and (max-width: 469px) {
+  table, tr, th, td, #tenderValue {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

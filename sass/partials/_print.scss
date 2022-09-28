@@ -1,0 +1,42 @@
+@media print {
+     .bill-input,button,h1{
+         display: none;
+     }
+     html{
+         position: absolute;
+         top: 0%;
+         bottom: 0%;
+         left: 0%;
+         right: 0;
+         border: 2px solid black;
+     }
+     .bill-container{
+         margin-top: 20px;
+        margin-left: 0px;
+        float: none;
+     }
+     .Shop{
+         text-align: center;
+         font-size: 32px;
+     }
+     strong{
+         font-size: 40px;
+     }
+     .invoice{
+         font-size: 26px;
+     }
+     input{
+         border: none;
+         outline: none;
+     }
+     #tenderValue{
+        text-align: center;
+    }
+    #welcome{
+        font-size: 40rem;
+        visibility: visible;
+    }
+    table,tr,td,th{
+        font-size: 26rem;
+    }
+}

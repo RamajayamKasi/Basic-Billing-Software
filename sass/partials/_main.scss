@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    background-color: blueviolet;
+}
+.Shop{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+em,address{
+    margin-top: 10px;
+    display: block;
+}
+
+.invoice{
+    margin-top: 20px;
+}
+span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/****************************************** Bill Input **********************************************/
+
+hr{
+    margin-top: 15px;
+    height: 5px;
+    background-color: black;
+}
+button{margin-left: 20px;}

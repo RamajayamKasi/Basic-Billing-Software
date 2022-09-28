@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Block</title>
+    <link rel="stylesheet" href="css/AccountBlock.css">
+</head>
+<body>
+    <div class="AccountBlock">
+        <div class="image">
+        <img src="image/lock.jpg" alt="Lock The Account" width="400" height="400">
+    </div>
+    <h2>You Enter Three Time Wrong Password</h2>
+    <label for="code">Security Code :
+        <input type="text" id="code">
+    </label>
+    <button onclick="verify()">Verify</button>
+    <div id="time">00:00:00</div>
+    </div>
+</body>
+<script src="js/AccountBlock.js"></script>
+</html>
