@@ -1,8 +1,14 @@
-/************************************************** globle variable *************************************/
-var n=0,c=0,text1="",text2="",text3="",text4="",text5="",text6=0;
+if(localStorage.getItem('Login')==null){
+    window.location.assign("Login.html");
+}
 
+/************************************************** globle variable *************************************/
+var n=0,c=0,text1="",text2="",text3="",text4="",text5="",text6=0,item=[];;
+//var round=Random(0,9999999999)
+$("#BillNo").text("Bill No : "+12356);
+console.log(localStorage.getItem(item));
 /*************************************************** product details ***********************************8*/
-function servies(){
+function servie(){
     var servies= $("#servies").val();
     var qty= $("#qty");
     var price= $("#price");
@@ -49,7 +55,7 @@ if(servies.toLowerCase()=="bike"){
     }
 }
 /*********************************************************  increase the product  *****************************/
-function qty(){
+function Qty(){
         var qty= $("#qty").val();
         var price= $("#price").val();
         $("#amount").val(qty*price);
@@ -62,7 +68,7 @@ function submit(){
     var amount= $("#amount").val();
     var totalNumber=$(".totalNumber").val();
     var s=document.getElementById("servies");
-    var q=document.getElementById("qty")
+    var q=document.getElementById("qty");
     if(s.value=="" || q.value==""){
         alert("The Field Is Empty")
 
@@ -82,6 +88,8 @@ function submit(){
            document.querySelector(".price").innerHTML=text4;
            document.querySelector(".amount").innerHTML=text5;
            n--;
+           item.push(servies,qty,price,amount);
+           localStorage.item+=JSON.stringify({"Description":servies,"Qty":qty,"Price":price,"Amount":amount});
            $("#servies").val(" ");$("#qty").val(" ");$("#price").val(" ");$("#amount").val(" ");
        }
        var b=parseInt(amount);
@@ -96,6 +104,8 @@ function dt(){
         h=d.getHours();
         m=d.getMinutes();
         s=d.getSeconds();
+        var day=d.getDate();
+        day=(day<10)?"0"+day:day;
         h=(h>12)? h=h-12 :h;
         h=(h<10)?"0"+h:h;
         m=(m<10)?"0"+m:m;
@@ -106,7 +116,7 @@ function dt(){
         else{
             session="AM";
         }
-        document.getElementById("date").innerHTML="Date : "+d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
+        document.getElementById("date").innerHTML="Date : "+day+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
         document.getElementById("time").innerHTML="Time : "+h+":"+m+":"+s+" "+session;
         running=setTimeout("dt();",1000);
     }

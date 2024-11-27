@@ -1,14 +1,11 @@
 @media print {
+    #BillNo{
+        display: block;
+        font-size: 26px;
+        margin-top: 5px;
+    }
      .bill-input,button,h1{
          display: none;
-     }
-     html{
-         position: absolute;
-         top: 0%;
-         bottom: 0%;
-         left: 0%;
-         right: 0;
-         border: 2px solid black;
      }
      .bill-container{
          margin-top: 20px;
@@ -32,9 +29,10 @@
      #tenderValue{
         text-align: center;
     }
-    #welcome{
-        font-size: 40rem;
-        visibility: visible;
+    p{
+        display:block;
+        font-size: 25px;
+        margin-top: 10px;
     }
     table,tr,td,th{
         font-size: 26rem;

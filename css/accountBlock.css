@@ -1,0 +1,62 @@
+
+body{
+    background-color: rgb(239, 245, 245);
+}
+.AccountBlock{
+    text-align: center;
+}
+.image{
+    margin:80px auto auto auto;
+}
+#time{
+    text-align: center;
+    font-size: 44px;
+}
+h2{
+    color: red;
+    font-size: 17px;
+    text-align: center;
+}
+@media (max-width:700px) {
+img{
+        width: 100%;
+        height: auto;
+    }
+    button{
+        margin-top:10px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    label{
+        font-size: 20px;
+    }
+    input,button{
+        padding:4px;
+    }
+    #time{
+        margin-top: 10px;
+    }
+}
+@media (min-width:701px) and (max-width:1300px) {
+img{
+        width: 70%;
+        height: auto;
+    }
+    button{
+        margin-top:10px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    label{
+        font-size: 20px;
+    }
+    input,button{
+        padding:4px;
+    }
+    #time{
+        margin-top: 10px;
+    }
+}
+
